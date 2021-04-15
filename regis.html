@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register @GS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="nam">
+<label class="logo">
+<img src="Orange Splatter Children & Kids Logo.png" class="namimg">
+</label>
+<ul class="namul">
+<li class="namulli"><a href="index.html" class="namullia">Home</a></li>
+<li class="namulli"><a href="regis.html" class="namullia">register</a></li>
+<li class="namulli"><a href="#" class="namullia">care</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="login-page">
+<div class="form">
+  <form class="register-form" action="register.php">
+  <input type="text" placeholder="user name"/>
+  <input type="text" placeholder="password"/>
+  <input type="text" placeholder="email id"/>
+  <button>Create</button>
+  <p class="message">Already Registered?<a href="#">login</a></p>
+  </form>
+  <form class="login-form">
+  <input type="text" placeholder="user name"/>
+  <input type="text" placeholder="password"/>
+  <button>login</button>
+  <p class="message">Not Registered?<a href="#">Register</a></p>
+  
+</div>
+</div>
+<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script>
+$('message a').click(function(){
+$('form').animate({height: "toggle", opacity: "toggle"},"slow")
+}
+</script>
+<body>
+</html>
